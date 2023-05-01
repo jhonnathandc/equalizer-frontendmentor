@@ -1,15 +1,15 @@
-# NFT Preview Card - FrontEnd Mentor
+# Equalizer - FrontEnd Mentor
 
 This project is part of the challenges of [FrontEnd Mentor](https://www.frontendmentor.io/).
 
-[Access the website here.](https://nftpreview-frontendmentor.vercel.app/)
+[Access the website here.](https://equalizer-frontendmentor.vercel.app/)
 <br>
 <br>
-[access the challenge on the FrontEnd Mentor here.](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+[access the challenge on the FrontEnd Mentor here.](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE)
 
 ## Demonstração
 
-![Wireframe - 1](https://user-images.githubusercontent.com/82620787/235288053-9179feed-ce48-4712-96ce-f4a5fb2d3bfb.png)
+![Wireframe - 1](https://user-images.githubusercontent.com/82620787/235383587-fa395409-7e3b-4c94-aa24-e89956cc8506.png)
 
 ## Mais Informações
 
