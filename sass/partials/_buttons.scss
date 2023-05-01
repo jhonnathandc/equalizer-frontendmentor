@@ -1,0 +1,61 @@
+.btn-ios {
+  background-color: $dark;
+  padding: 15px 30px;
+  border-radius: 12px;
+  width: 100%;
+  transition: .3s ease;
+
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../assets/icon-apple.svg");
+    width: 18px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: $cyan;
+  }
+}
+
+.btn-and {
+  background-color: $white;
+  padding: 15px 30px;
+  border-radius: 12px;
+  width: 100%;
+  transition: .3s ease;
+
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $dark;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../assets/icon-android.svg");
+    width: 18px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: $yellow;
+  }
+}

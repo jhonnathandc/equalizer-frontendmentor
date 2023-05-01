@@ -1,0 +1,134 @@
+.main {
+  padding-top: 65px;
+  position: relative;
+
+  @include responsive(m) {
+    padding-top: 33px;
+  }
+
+  @include responsive(s) {
+    padding-top: 33px;
+  }
+
+  @include responsive(xs) {
+    padding-top: 24px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../assets/bg-main-desktop.svg");
+    width: 1913px;
+    height: 2058px;
+    position: absolute;
+    z-index: -1;
+    top: -450px;
+    left: -450px;
+
+    @include responsive(m) {
+      background-image: url("../../assets/bg-main-tablet.svg");
+      width: 1255px;
+      height: 1080px;
+      top: -400px;
+      left: -400px;
+    }
+
+    @include responsive(s) {
+      background-image: url("../../assets/bg-main-tablet.svg");
+      width: 1255px;
+      height: 1080px;
+      top: -400px;
+      left: -400px;
+    }
+
+    @include responsive(xs) {
+      background-image: url("../../assets/bg-main-mobile.svg");
+      width: 554px;
+      height: 752px;
+      top: -350px;
+      left: 100px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../../assets/bg-pattern-1.svg");
+    width: 312px;
+    height: 468px;
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+    right: -185px;
+
+    @include responsive(m) {
+      width: 266px;
+      height: 400px;
+      top: -200px;
+      right: -60px;
+      background-position: bottom left;
+    }
+
+    @include responsive(s) {
+      width: 266px;
+      height: 400px;
+      top: -200px;
+      right: -60px;
+      background-position: bottom left;
+    }
+
+    @include responsive(xs) {
+      display: none;
+    }
+  }
+
+  .content {
+    max-width: 850px;
+
+    @include responsive(m) {
+      max-width: 650px;
+    }
+
+    @include responsive(s) {
+      max-width: 510px;
+    }
+
+    h1 {
+      @include type(h1, desktop);
+      color: $dark;
+      margin-bottom: 40px;
+
+      @include responsive(m) {
+        @include type(h1, tablet);
+        margin-bottom: 28px;
+      }
+
+      @include responsive(s) {
+        @include type(h1, tablet);
+        margin-bottom: 28px;
+      }
+
+      @include responsive(xs) {
+        @include type(h1, mobile);
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      @include type(b1, desktop);
+      color: $dark;
+
+      @include responsive(m) {
+        @include type(b1, tablet);
+      }
+
+      @include responsive(s) {
+        @include type(b1, tablet);
+      }
+
+      @include responsive(xs) {
+        @include type(b1, mobile);
+      }
+    }
+  }
+}

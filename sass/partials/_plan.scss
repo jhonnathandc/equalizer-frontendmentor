@@ -1,0 +1,175 @@
+.plan-container {
+  max-width: $container-xl;
+  margin: 321px auto 202px auto;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  @include responsive(m) {
+    margin-top: 249px;
+  }
+
+  @include responsive(s) {
+    margin-top: 249px;
+  }
+
+  @include responsive(xs) {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 166px;
+  }
+
+  .plan {
+    background-color: $dark;
+    height: 600px;
+    border-radius: 12px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../../assets/bg-pattern-2.svg");
+      max-width: 312px;
+      width: 100%;
+      max-height: 468px;
+      height: 100%;
+      left: 336px;
+      position: absolute;
+      top: -40px;
+
+      @include responsive(s) {
+        left: 200px;
+        top: -30px;
+      }
+
+      @include responsive(xs) {
+        transform: translate3d(-50%, 0, 0);
+        left: 50%;
+        top: 0px;
+      }
+    }
+
+    .phone {
+      max-width: 312px;
+      position: absolute;
+      top: -213px;
+      left: 102px;
+      z-index: 2;
+
+      @include responsive(m) {
+        top: -138px;
+        left: 64px;
+      }
+
+      @include responsive(s) {
+        max-width: 270px;
+        top: -138px;
+        left: 64px;
+      }
+
+      @include responsive(xs) {
+        max-width: 208px;
+        transform: translate3d(-50%, 0, 0);
+        left: 50%;
+        top: -98px;
+      }
+    }
+
+    .card-plan {
+      position: absolute;
+      top: 90px;
+      right: 95px;
+      z-index: 3;
+
+      background-color: $orange;
+      max-width: 446px;
+      padding: 58px 54px 48px 54px;
+      border-radius: 12px;
+
+      @include responsive(m) {
+        top: 150px;
+        right: 58px;
+        padding: 48px 54px 48px 54px;
+      }
+
+      @include responsive(s) {
+        top: 150px;
+        right: 58px;
+        padding: 48px 54px 48px 54px;
+      }
+
+      @include responsive(xs) {
+        max-width: 100%;
+        top: 380px;
+        right: 0px;
+        padding: 48px 36px 48px 36px;
+      }
+
+      h2 {
+        @include type(h2, desktop);
+        color: $white;
+        margin-bottom: 22px;
+
+        @include responsive(m) {
+          @include type(h2, tablet);
+          margin-bottom: 12px;
+        }
+
+        @include responsive(s) {
+          @include type(h2, tablet);
+          margin-bottom: 12px;
+        }
+
+        @include responsive(xs) {
+          @include type(h2, mobile);
+          margin-bottom: 12px;
+        }
+      }
+
+      p {
+        @include type(b1, desktop);
+        color: $white;
+        margin-bottom: 39px;
+
+        @include responsive(m) {
+          @include type(b1, tablet);
+          margin-bottom: 36px;
+        }
+
+        @include responsive(s) {
+          @include type(b1, tablet);
+          margin-bottom: 36px;
+        }
+
+        @include responsive(xs) {
+          @include type(b1, mobile);
+          margin-bottom: 36px;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 46px;
+
+        @include responsive(m) {
+          margin-bottom: 32px;
+        }
+
+        @include responsive(s) {
+          margin-bottom: 32px;
+        }
+
+        span {
+          font-size: 6.5rem;
+          line-height: 5.2rem;
+          font-weight: 700;
+          margin-right: 16px;
+        }
+      }
+
+      .btn-ios {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

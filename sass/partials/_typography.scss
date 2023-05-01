@@ -1,0 +1,58 @@
+@mixin type($size, $device) {
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+
+  // H1
+  @if ($size == h1 and $device == desktop) {
+    font-size: 8.8rem;
+    font-weight: 700;
+    line-height: 8.8rem;
+    letter-spacing: -1px;
+  } @else if ($size == h1 and $device == tablet) {
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 6.4rem;
+    letter-spacing: -0.73px;
+  } @else if ($size == h1 and $device == mobile) {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: -0.45px;
+  }
+
+  // H2
+  @if ($size == h2 and $device == desktop) {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+  } @else if ($size == h2 and $device == tablet) {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+  } @else if ($size == h2 and $device == mobile) {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+  }
+
+  // B1
+  @if ($size == b1 and $device == desktop) {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+  } @else if ($size == b1 and $device == tablet) {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+  } @else if ($size == b1 and $device == mobile) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+  }
+
+  // B2
+  @if ($size == b2 and $device == desktop) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height:  2.6rem;
+  }
+}
