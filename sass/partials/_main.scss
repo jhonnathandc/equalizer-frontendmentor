@@ -1,52 +1,52 @@
 .main {
-  padding-top: 65px;
+  padding-top: 6.5rem;
   position: relative;
 
   @include responsive(m) {
-    padding-top: 33px;
+    padding-top: 3.3rem;
   }
 
   @include responsive(s) {
-    padding-top: 33px;
+    padding-top: 3.3rem;
   }
 
   @include responsive(xs) {
-    padding-top: 24px;
+    padding-top: 2.4rem;
   }
 
   &::before {
     content: "";
     display: block;
     background-image: url("../../assets/bg-main-desktop.svg");
-    width: 1913px;
-    height: 2058px;
+    width: 191.3rem;
+    height: 205.8rem;
     position: absolute;
     z-index: -1;
-    top: -450px;
-    left: -450px;
+    top: -45rem;
+    left: -45rem;
 
     @include responsive(m) {
       background-image: url("../../assets/bg-main-tablet.svg");
-      width: 1255px;
-      height: 1080px;
-      top: -400px;
-      left: -400px;
+      width: 125.5rem;
+      height: 108rem;
+      top: -40rem;
+      left: -40rem;
     }
 
     @include responsive(s) {
       background-image: url("../../assets/bg-main-tablet.svg");
-      width: 1255px;
-      height: 1080px;
-      top: -400px;
-      left: -400px;
+      width: 125.5rem;
+      height: 108rem;
+      top: -40rem;
+      left: -40rem;
     }
 
     @include responsive(xs) {
       background-image: url("../../assets/bg-main-mobile.svg");
-      width: 554px;
-      height: 752px;
-      top: -350px;
-      left: 100px;
+      width: 55.4rem;
+      height: 75.2rem;
+      top: -35rem;
+      left: 10rem;
     }
   }
 
@@ -54,26 +54,26 @@
     content: "";
     display: block;
     background-image: url("../../assets/bg-pattern-1.svg");
-    width: 312px;
-    height: 468px;
+    width: 31.2rem;
+    height: 46.8rem;
     position: absolute;
     z-index: -1;
-    top: -200px;
-    right: -185px;
+    top: -20rem;
+    right: -18.5rem;
 
     @include responsive(m) {
-      width: 266px;
-      height: 400px;
-      top: -200px;
-      right: -60px;
+      width: 26.6rem;
+      height: 40rem;
+      top: -20rem;
+      right: -6rem;
       background-position: bottom left;
     }
 
     @include responsive(s) {
-      width: 266px;
-      height: 400px;
-      top: -200px;
-      right: -60px;
+      width: 26.6rem;
+      height: 40rem;
+      top: -20rem;
+      right: -6rem;
       background-position: bottom left;
     }
 
@@ -83,34 +83,34 @@
   }
 
   .content {
-    max-width: 850px;
+    max-width: 85rem;
 
     @include responsive(m) {
-      max-width: 650px;
+      max-width: 65rem;
     }
 
     @include responsive(s) {
-      max-width: 510px;
+      max-width: 51rem;
     }
 
     h1 {
       @include type(h1, desktop);
       color: $dark;
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
 
       @include responsive(m) {
         @include type(h1, tablet);
-        margin-bottom: 28px;
+        margin-bottom: 2.8rem;
       }
 
       @include responsive(s) {
         @include type(h1, tablet);
-        margin-bottom: 28px;
+        margin-bottom: 2.8rem;
       }
 
       @include responsive(xs) {
         @include type(h1, mobile);
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
       }
     }
 

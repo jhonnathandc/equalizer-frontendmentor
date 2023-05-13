@@ -1,9 +1,9 @@
 .header {
-  padding-top: 62px;
-  padding-bottom: 62px;
+  padding-top: 6.2rem;
+  padding-bottom: 6.2rem;
 
   @include responsive(xs) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }

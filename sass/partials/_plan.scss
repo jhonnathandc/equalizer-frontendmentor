@@ -1,174 +1,174 @@
 .plan-container {
   max-width: $container-xl;
-  margin: 321px auto 202px auto;
-  padding-right: 24px;
-  padding-left: 24px;
+  margin: 32.1rem auto 20.2rem auto;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
 
   @include responsive(m) {
-    margin-top: 249px;
+    margin-top: 24.9rem;
   }
 
   @include responsive(s) {
-    margin-top: 249px;
+    margin-top: 24.9rem;
   }
 
   @include responsive(xs) {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-top: 166px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 16.6rem;
   }
 
   .plan {
     background-color: $dark;
-    height: 600px;
-    border-radius: 12px;
+    height: 60rem;
+    border-radius: 1.2rem;
     position: relative;
 
     &::before {
       content: "";
       display: block;
       background-image: url("../../assets/bg-pattern-2.svg");
-      max-width: 312px;
+      max-width: 31.2rem;
       width: 100%;
-      max-height: 468px;
+      max-height: 46.8rem;
       height: 100%;
-      left: 336px;
+      left: 33.6rem;
       position: absolute;
-      top: -40px;
+      top: -4rem;
 
       @include responsive(s) {
-        left: 200px;
-        top: -30px;
+        left: 20rem;
+        top: -3rem;
       }
 
       @include responsive(xs) {
         transform: translate3d(-50%, 0, 0);
         left: 50%;
-        top: 0px;
+        top: 0;
       }
     }
 
     .phone {
-      max-width: 312px;
+      max-width: 31.2rem;
       position: absolute;
-      top: -213px;
-      left: 102px;
+      top: -21.3rem;
+      left: 10.2rem;
       z-index: 2;
 
       @include responsive(m) {
-        top: -138px;
-        left: 64px;
+        top: -13.8rem;
+        left: 6.4rem;
       }
 
       @include responsive(s) {
-        max-width: 270px;
-        top: -138px;
-        left: 64px;
+        max-width: 27rem;
+        top: -13.8rem;
+        left: 6.4rem;
       }
 
       @include responsive(xs) {
-        max-width: 208px;
+        max-width: 20.8rem;
         transform: translate3d(-50%, 0, 0);
         left: 50%;
-        top: -98px;
+        top: -9.8rem;
       }
     }
 
     .card-plan {
       position: absolute;
-      top: 90px;
-      right: 95px;
+      top: 9rem;
+      right: 9.5rem;
       z-index: 3;
 
       background-color: $orange;
-      max-width: 446px;
-      padding: 58px 54px 48px 54px;
-      border-radius: 12px;
+      max-width: 44.6rem;
+      padding: 5.8rem 5.4rem 4.8rem 5.4rem;
+      border-radius: 1.2rem;
 
       @include responsive(m) {
-        top: 150px;
-        right: 58px;
-        padding: 48px 54px 48px 54px;
+        top: 15rem;
+        right: 5.8rem;
+        padding: 4.8rem 5.4rem 4.8rem 5.4rem;
       }
 
       @include responsive(s) {
-        top: 150px;
-        right: 58px;
-        padding: 48px 54px 48px 54px;
+        top: 15rem;
+        right: 5.8rem;
+        padding: 4.8rem 5.4rem 4.8rem 5.4rem;
       }
 
       @include responsive(xs) {
         max-width: 100%;
-        top: 380px;
-        right: 0px;
-        padding: 48px 36px 48px 36px;
+        top: 38rem;
+        right: 0;
+        padding: 4.8rem 3.6rem 4.8rem 3.6rem;
       }
 
       h2 {
         @include type(h2, desktop);
         color: $white;
-        margin-bottom: 22px;
+        margin-bottom: 2.2rem;
 
         @include responsive(m) {
           @include type(h2, tablet);
-          margin-bottom: 12px;
+          margin-bottom: 1.2rem;
         }
 
         @include responsive(s) {
           @include type(h2, tablet);
-          margin-bottom: 12px;
+          margin-bottom: 1.2rem;
         }
 
         @include responsive(xs) {
           @include type(h2, mobile);
-          margin-bottom: 12px;
+          margin-bottom: 1.2rem;
         }
       }
 
       p {
         @include type(b1, desktop);
         color: $white;
-        margin-bottom: 39px;
+        margin-bottom: 3.9rem;
 
         @include responsive(m) {
           @include type(b1, tablet);
-          margin-bottom: 36px;
+          margin-bottom: 3.6rem;
         }
 
         @include responsive(s) {
           @include type(b1, tablet);
-          margin-bottom: 36px;
+          margin-bottom: 3.6rem;
         }
 
         @include responsive(xs) {
           @include type(b1, mobile);
-          margin-bottom: 36px;
+          margin-bottom: 3.6rem;
         }
       }
 
       .price {
         display: flex;
         align-items: center;
-        margin-bottom: 46px;
+        margin-bottom: 4.6rem;
 
         @include responsive(m) {
-          margin-bottom: 32px;
+          margin-bottom: 3.2rem;
         }
 
         @include responsive(s) {
-          margin-bottom: 32px;
+          margin-bottom: 3.2rem;
         }
 
         span {
           font-size: 6.5rem;
           line-height: 5.2rem;
           font-weight: 700;
-          margin-right: 16px;
+          margin-right: 1.6rem;
         }
       }
 
       .btn-ios {
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
       }
     }
   }
